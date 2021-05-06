@@ -9,6 +9,12 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- chart.js -->
+    <script type="text/javascript" src="js/chart.js"></script>
+
+    <!-- mystyle -->
+    <link href="css/mystyle.css" rel="stylesheet" />
   </head>
   <body class="sb-nav-fixed">
     <!-- NAVBAR -->
@@ -29,8 +35,9 @@
       </div>
     </nav>
     <!-- END NAVBAR -->
-    <!-- SIDEBAR -->
+
     <div id="layoutSidenav">
+      <!-- SIDEBAR -->
       <div id="layoutSidenav_nav">
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
           <div class="sb-sidenav-menu">
@@ -154,27 +161,35 @@
             <!-- end navcard -->
 
             <!-- konten -->
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <i class="fas fa-chart-area mr-1"></i>
-                    Area Chart Example
+            <div class="card mb-3" style="max-width: 100%; height: 65%">
+              <div class="row g-0">
+                <!-- grafik -->
+                <div class="col-md-8">
+                  <h5 class="mt-2 ml-2">Coffe Shop Management System</h5>
+                  <div style="width: 100%; height: 400px">
+                    <canvas id="myChart"></canvas>
                   </div>
-                  <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                 </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="card mb-4">
-                  <div class="card-header">
-                    <i class="fas fa-chart-bar mr-1"></i>
-                    Bar Chart Example
+                <!-- end grafik -->
+                <!-- menu signature -->
+                <div class="col-md-4">
+                  <div class="card-body mt-1 mb-3">
+                    <h5 class="card-title">Menu Signature :</h5>
+                    <h6>Kopi Susu</h6>
+                    <div class="bar bg-primary mb-3" style="width: 150px"></div>
+                    <h6>Red Velvet</h6>
+                    <div class="bar bg-danger mb-3" style="width: 170px"></div>
+                    <h6>Matcha</h6>
+                    <div class="bar bg-success mb-3" style="width: 100px"></div>
+                    <h6>Americano</h6>
+                    <div class="bar bg-warning mb-3" style="width: 40px"></div>
                   </div>
-                  <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                 </div>
+                <!-- end menu signature -->
               </div>
             </div>
-            <!-- end konten -->
+            <!-- end konten-->
+
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
@@ -670,12 +685,7 @@
         <footer class="py-4 bg-light mt-auto">
           <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-between small">
-              <div class="text-muted">Copyright &copy; Your Website 2021</div>
-              <div>
-                <a href="#">Privacy Policy</a>
-                &middot;
-                <a href="#">Terms &amp; Conditions</a>
-              </div>
+              <div class="text-muted">Copyright &copy; Administrasi Coffee Shop 2021</div>
             </div>
           </div>
         </footer>
